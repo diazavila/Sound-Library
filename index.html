@@ -6,7 +6,7 @@
     <style type="text/css">
 html {
   color: black;
-  background: #057fd7 none repeat scroll 0% 0%;
+  background: #bfdeff none repeat scroll 0% 0%;
 }
 
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
@@ -77,7 +77,7 @@ body {
 }
 
 select, input, button, textarea {
-  font: 99% helvetica, arial, sans-serif;
+  font: 99% arial helvetica clean sans-serif;
 }
 
 table {
@@ -90,7 +90,7 @@ pre, code, kbd, samp, tt {
 
 body {
   text-align: center;
-  background-color: #057fd7;
+  background-color: #bfdeff;
   color: black;
 }
 
@@ -372,106 +372,209 @@ Code licensed under the BSD License:
 http://developer.yahoo.net/yui/license.txt
 version: 2.6.0
 */
-h1{font-size:250%;}h2{font-size:123.1%;}h3{font-size:108%;}h1,h2,h3{margin:1em 0;}h1,h2,h3,h4,h5,h6,strong{font-weight:bold;}abbr,acronym{border-bottom:1px dotted #000;cursor:help;} em{font-style:italic;}blockquote,ul,ol,dl{margin:1em;}ol,ul,dl{margin-left:2em;}ol li{list-style:decimal outside;}ul li{list-style:disc outside;}dl dd{margin-left:1em;}th,td{border:1px solid #000;padding:.5em;}th{font-weight:bold;text-align:center;}caption{margin-bottom:.5em;text-align:center;}p,fieldset,table,pre{margin-bottom:1em;}input[type=text],input[type=password],textarea{width:12.25em;*width:11.9em;}
+h1{font-size:138.5%;}h2{font-size:123.1%;}h3{font-size:108%;}h1,h2,h3{margin:1em 0;}h1,h2,h3,h4,h5,h6,strong{font-weight:bold;}abbr,acronym{border-bottom:1px dotted #000;cursor:help;} em{font-style:italic;}blockquote,ul,ol,dl{margin:1em;}ol,ul,dl{margin-left:2em;}ol li{list-style:decimal outside;}ul li{list-style:disc outside;}dl dd{margin-left:1em;}th,td{border:1px solid #000;padding:.5em;}th{font-weight:bold;text-align:center;}caption{margin-bottom:.5em;text-align:center;}p,fieldset,table,pre{margin-bottom:1em;}input[type=text],input[type=password],textarea{width:12.25em;*width:11.9em;}
 </style><meta name="author" content="Jose Antonio Diaz">
     <meta name="description" content="Task 2.1.1 Sound Library">
     <meta name="generator" content="BlueGriffon wysiwyg editor">
     <style type="text/css"></style>
   </head>
   <body>
-    <div class="yui-t1" style="background-color: #d7ecff;" id="doc3">
-      <div id="hd">
-        <h1 style="height: 6px;"><br>
+    <div id="doc3" class="yui-t1" style="background-color: #ffcc99;">
+      <div id="hd" style="background-color: #cccccc;">
+        <h1 style="text-align: center;"><br>
         </h1>
-        <h1>&nbsp;<a href="https://www.saturnh2020.eu" target="_blank"><img src="Images/SaturnLogo2.jpg"
-              alt="SATURN Web Site" style="width: 142px; height: 61px;" title="SATURN Web Site"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <span style="font-family: Helvetica,Arial,sans-serif; color: #666666;">TASK
-            2.1.1 SOUND LIBRARY</span></h1>
+        <h1 style="text-align: center;"><a href="https://www.saturnh2020.eu" title="SATURN web site"
+            target="_blank"><img src="file:///C:/Users/Jose/Qsync/Saturn/HtmlFiles/SaturnLogo2.jpg"
+              alt=""></a></h1>
+        <p></p>
+        <h1 style="text-align: center; background-color: #cccccc;"><span style="font-family: Helvetica,Arial,sans-serif;">TASK
+            2.1.2 SOUND LIBRARY</span></h1>
         <hr>
         <p><br>
         </p>
+        <p></p>
       </div>
       <div id="bd">
         <div id="yui-main">
           <div class="yui-b">
-            <div class="yui-g" style="background-color: white;">
-              <script>
-                function change_audio_file()
-                {
-                  var file_list = document.getElementById('audio_list') ;
-                  var file_to_play = file_list.options[ file_list.selectedIndex ].value ;
-                  var player = document.getElementById('audio_player');
-                  player.src = file_to_play ;
-                }
-              </script>
-              <form> <label for="audio_list"> <br>
-                </label>
-                <div style="text-align: center;">
-                  <h3><label for="audio_list"> <span style="font-family: Helvetica,Arial,sans-serif;">Select
-                        an audio file to load into the player. </span></label></h3>
-                  <h3> <span style="font-family: Helvetica,Arial,sans-serif;"><label
-                        for="audio_list"> Then click the Play button on the
-                        player for playback.</label></span></h3>
-                  <label for="audio_list"> </label><br>
-                  <label for="audio_list"> </label>
-                  <select onchange="change_audio_file();" id="audio_list">
-                    <option selected="selected" value="Sound/ContainerShip_broadband.wav">Container
-                      Ship Broadband</option>
-                    <option value="Sound/ContainerShip_broadband_modulated.wav">Container
-                      Ship Broadband Modulated</option>
-                    <option value="Sound/ContainerShip_broadband_modulated_tonals.wav">Container
-                      Ship Broadband Modulated Tonals</option>
-                    <option value="Sound/ContainerShip_broadband_tonals.wav">Container
-                      Ship Broadband Tonals</option>
-                    <option value="Sound/FishingBoat_broadband.wav">Fishing Boat
-                      Broadband</option>
-                    <option value="Sound/FishingBoat_broadband_modulated.wav">Fishing
-                      Boat Broadband Modulated</option>
-                    <option value="Sound/FishingBoat_broadband_modulated_tonals.wav">Fishing
-                      Boat Broadband Modulated Tonals</option>
-                    <option value="Sound/FishingBoat_broadband_tonals.wav">Fishing
-                      Boat Broadband Tonals</option>
-                    &nbsp;
-                  </select>
-                </div>
-                <div style="text-align: center;"><br>
-                </div>
-                <div style="text-align: center;"><br>
-                </div>
-              </form>
-              <div id="audio_container" style="text-align: center;"> <audio controls="controls"
-                  id="audio_player" src="Sound/ContainerShip_broadband.wav">
-                  <div style="border: 1px solid black ; padding: 8px ;"> Sorry,
-                    your browser does not support this audio player. </div>
-                </audio></div>
-              <div><br>
-              </div>
+            <div class="yui-g" style="background-color: white;"><br>
+              <p></p>
+              <table style="width: 703px; height: 438px; text-align: left; margin-left: auto; margin-right: auto;"
+                border="3">
+                <thead>
+                  <tr>
+                    <th style="text-align: center; margin-left: 78px; width: 300px;"><span
+                        style="font-family: Helvetica,Arial,sans-serif;"><span style="font-family: arial helvetica clean sans-serif;">S</span>ignal
+                        description</span></th>
+                    <th style="text-align: center; width: 303px; margin-left: -82px;"><span
+                        style="font-family: Helvetica,Arial,sans-serif;">Sound
+                        controls</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span style="font-family: Helvetica,Arial,sans-serif;">-
+                        Container Ship Broadband</span></td>
+                    <td><audio src="Sound/ContainerShip_broadband.wav" preload="none"
+                        controls="controls"></audio><br>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span style="font-family: Helvetica,Arial,sans-serif;">-
+                        Container Ship Broadband Modulated</span></td>
+                    <td><audio src="Sound/ContainerShip_broadband_modulated.wav"
+                        preload="none" controls="controls"></audio><br>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span style="font-family: Helvetica,Arial,sans-serif;">-
+                        Container Ship Broadband Modulated Tonals</span></td>
+                    <td><audio src="Sound/ContainerShip_broadband_modulated_tonals.wav"
+                        preload="none" controls="controls"></audio><br>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span style="font-family: Helvetica,Arial,sans-serif;">-
+                        Container Ship Broadband Tonals</span></td>
+                    <td><audio src="Sound/ContainerShip_broadband_tonals.wav" preload="none"
+                        controls="controls"></audio><br>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span style="font-family: Helvetica,Arial,sans-serif;">-
+                        Fishing Boat Broadband</span></td>
+                    <td><audio src="Sound/FishingBoat_broadband.wav" preload="none"
+                        controls="controls"></audio><br>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span style="font-family: Helvetica,Arial,sans-serif;">-
+                        Fishing Boat Broadband Modulated</span></td>
+                    <td><audio src="Sound/FishingBoat_broadband_modulated.wav" preload="none"
+                        controls="controls"></audio><br>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span style="font-family: Helvetica,Arial,sans-serif;">-
+                        Fishing Boat Broadband Modulated Tonals</span></td>
+                    <td><audio src="Sound/FishingBoat_broadband_modulated_tonals.wav"
+                        preload="none" controls="controls"></audio><br>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span style="font-family: Helvetica,Arial,sans-serif;">-
+                        Fishing Boat Broadband Tonals</span></td>
+                    <td><audio src="Sound/FishingBoat_broadband_tonals.wav" preload="none"
+                        controls="controls"></audio><br>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <p></p>
             </div>
           </div>
         </div>
-        <div class="yui-b" style="background-color: #cccccc; margin-left: 10px; width: 150px;">
-          <h2><span style="font-family: Helvetica,Arial,sans-serif;">&nbsp; <span
-                style="color: #cc6600;"> Related Links: </span><br>
-            </span></h2>
-          <p style="width: 152px;">&nbsp; <a href="https://www.marei.ie/project/jonas/"
-              title="JONAS web site" target="_blank"><img src="Images/Jonas5.jpg"
-                alt="JONAS Web Site" style="width: 128px; height: 82px;" title="JONAS Web Site"></a></p>
-          <p style="width: 152px;">&nbsp; <a href="https://www.plocan.eu" target="_blank"><img
-                src="Images/Plocan.jpg" alt="PLOCAN Web Site" style="width: 127px; height: 38px;"
-                title="PLOCAN Web Site"></a></p>
-          <p style="margin-left: 8px;"><span style="font-family: Helvetica,Arial,sans-serif;"><span
-                style="color: #0000ee;">Contact email: <a href="mailto:jose.diaz@plocan.eu">jose.diaz@plocan.eu</a></span><br>
-            </span></p>
+        <div class="yui-b">
+          <h3><b><span style="font-family: Helvetica,Arial,sans-serif;">Related
+                links:</span></b></h3>
         </div>
         <div class="yui-b"><br>
         </div>
-      </div>
-      <div id="ft"> <br>
-        <hr style="height: 0px;">
-        <div style="text-align: center;"><span style="color: #666666;">© 2022 -
-            Jose Antonio Diaz</span></div>
-        <div style="text-align: center;"><span style="color: #666666;"><br>
-          </span></div>
+        <div class="yui-b"><br>
+        </div>
+        <div class="yui-b"><br>
+        </div>
+        <div class="yui-b"><a href="https://www.saturnh2020.eu" title="SATURN web site"
+            target="_blank"><img src="file:///C:/Users/Jose/Qsync/Saturn/HtmlFiles/SaturnLogo4.jpg"
+              alt=""></a></div>
+        <div class="yui-b"><br>
+        </div>
+        <div class="yui-b"><br>
+        </div>
+        <div class="yui-b"><br>
+        </div>
+        <div class="yui-b"><br>
+        </div>
+        <div class="yui-b"><br>
+        </div>
+        <div class="yui-b"><a href="https://www.marei.ie/project/jonas/" title="JONAS project web site"
+            target="_blank"><img src="Jonas3.jpg" alt="" style="width: 139px; height: 108px;"><br>
+          </a></div>
+        <div class="yui-b"><a href="https://www.marei.ie/project/jonas/" title="JONAS project web site"
+            target="_blank"><br>
+          </a></div>
+        <div class="yui-b"><a href="https://www.marei.ie/project/jonas/" title="JONAS project web site"
+            target="_blank"><br>
+          </a></div>
+        <div class="yui-b"><a href="https://www.marei.ie/project/jonas/" title="JONAS project web site"
+            target="_blank"><br>
+          </a></div>
+        <div class="yui-b"><a href="https://www.marei.ie/project/jonas/" title="JONAS project web site"
+            target="_blank"><br>
+          </a></div>
+        <div class="yui-b"><a href="https://www.marei.ie/project/jonas/" title="JONAS project web site"
+            target="_blank"><br>
+          </a></div>
+        <div class="yui-b"><a href="https://www.marei.ie/project/jonas/" title="JONAS project web site"
+            target="_blank"><br>
+          </a></div>
+        <div class="yui-b"><a href="https://www.marei.ie/project/jonas/" title="JONAS project web site"
+            target="_blank"><br>
+          </a></div>
+        <div class="yui-b"><a href="https://www.marei.ie/project/jonas/" title="JONAS project web site"
+            target="_blank"><br>
+          </a></div>
+        <div class="yui-b"><a href="https://www.marei.ie/project/jonas/" title="JONAS project web site"
+            target="_blank"><br>
+          </a></div>
+        <div class="yui-b"><a href="https://www.plocan.eu" title="PLOCAN web site"
+            target="_blank"><img src="Plocan.jpg" alt="" style="width: 144px; height: 44px;"></a></div>
+        <div class="yui-b"><a href="https://www.marei.ie/project/jonas/" title="JONAS project web site"
+            target="_blank"><br>
+          </a></div>
+        <div class="yui-b"><a href="https://www.marei.ie/project/jonas/" title="JONAS project web site"
+            target="_blank"><br>
+          </a></div>
+        <div class="yui-b"><a href="https://www.marei.ie/project/jonas/" title="JONAS project web site"
+            target="_blank"><br>
+          </a></div>
+        <div class="yui-b"><a href="https://www.marei.ie/project/jonas/" title="JONAS project web site"
+            target="_blank"><br>
+          </a></div>
+        <div class="yui-b"><a href="https://www.marei.ie/project/jonas/" title="JONAS project web site"
+            target="_blank"><br>
+          </a></div>
+        <div class="yui-b"><a href="mailto:jose.diaz@plocan.eu" title="Support email">Support
+            email: jose.diaz@plocan.eu<br>
+          </a></div>
+        <div class="yui-b"><a target="_blank" href="mailto:jose.diaz@plocan.eu"
+            title="Support email"><br>
+          </a></div>
+        <div class="yui-b"><a target="_blank" href="mailto:jose.diaz@plocan.eu"
+            title="Support email"><br>
+          </a></div>
+        <div class="yui-b"><a target="_blank" href="mailto:jose.diaz@plocan.eu"
+            title="Support email"><br>
+          </a></div>
+        <div class="yui-b"><a href="mailto:jose.diaz@plocan.eu" title="Support email"><br>
+          </a> </div>
+        <a href="mailto:jose.diaz@plocan.eu" title="Support email"> </a>
+        <div class="yui-b"><a href="mailto:jose.diaz@plocan.eu" title="Support email"><br>
+          </a> </div>
+        <a href="mailto:jose.diaz@plocan.eu" title="Support email"> </a>
+        <div class="yui-b"><a href="mailto:jose.diaz@plocan.eu" title="Support email"><br>
+          </a> </div>
+        <a href="mailto:jose.diaz@plocan.eu" title="Support email"> </a></div>
+      <div id="ft">
+        <p style="text-align: center;"><br>
+        </p>
+        <hr>
+        <p style="text-align: center;"><br>
+        </p>
+        <p style="text-align: center;"><span style="color: #666666;">© 2022 -
+            Jose Antonio Diaz</span></p>
+        <p style="text-align: center;"><span style="color: #666666;"><br>
+          </span></p>
       </div>
     </div>
   </body>
