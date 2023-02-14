@@ -1,478 +1,83 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <title>Sound Library</title>
-    <style type="text/css">
-html {
-  color: black;
-  background: #057fd7 none repeat scroll 0% 0%;
-}
-
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
-  margin: 0px;
-  padding: 0px;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0px;
-}
-
-fieldset, img {
-  border: 0px none;
-}
-
-address, caption, cite, code, dfn, em, strong, th, var {
-  font-style: normal;
-  font-weight: normal;
-}
-
-li {
-  list-style: outside none none;
-}
-
-caption, th {
-  text-align: left;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%;
-  font-weight: normal;
-}
-
-q::before, q::after {
-  content: "";
-}
-
-abbr, acronym {
-  border: 0px none;
-  font-variant: normal;
-}
-
-sup {
-  vertical-align: text-top;
-}
-
-sub {
-  vertical-align: text-bottom;
-}
-
-input, textarea, select {
-}
-
-input, textarea, select {
-}
-
-legend {
-  color: black;
-}
-
-del, ins {
-  text-decoration: none;
-}
-
-body {
-  font: 13px / 1.231 arial helvetica clean sans-serif;
-}
-
-select, input, button, textarea {
-  font: 99% helvetica, arial, sans-serif;
-}
-
-table {
-}
-
-pre, code, kbd, samp, tt {
-  font-family: monospace;
-  line-height: 100%;
-}
-
-body {
-  text-align: center;
-  background-color: #057fd7;
-  color: black;
-}
-
-#ft {
-  clear: both;
-}
-
-#doc, #doc2, #doc3, #doc4, .yui-t1, .yui-t2, .yui-t3, .yui-t4, .yui-t5, .yui-t6, .yui-t7 {
-  margin: auto;
-  text-align: left;
-  width: 57.69em;
-  min-width: 750px;
-}
-
-#doc2 {
-  width: 73.076em;
-}
-
-#doc3 {
-  margin: auto 10px;
-  width: auto;
-}
-
-#doc4 {
-  width: 74.923em;
-}
-
-.yui-b {
-  position: relative;
-}
-
-.yui-b {
-}
-
-#yui-main .yui-b {
-  position: static;
-}
-
-#yui-main, .yui-g .yui-u .yui-g {
-  width: 100%;
-}
-
-.yui-t1 #yui-main, .yui-t2 #yui-main, .yui-t3 #yui-main {
-  float: right;
-  margin-left: -25em;
-}
-
-.yui-t4 #yui-main, .yui-t5 #yui-main, .yui-t6 #yui-main {
-  float: left;
-  margin-right: -25em;
-}
-
-.yui-t1 .yui-b {
-  float: left;
-  width: 12.3077em;
-}
-
-.yui-t1 #yui-main .yui-b {
-  margin-left: 13.3077em;
-}
-
-.yui-t2 .yui-b {
-  float: left;
-  width: 13.8461em;
-}
-
-.yui-t2 #yui-main .yui-b {
-  margin-left: 14.8461em;
-}
-
-.yui-t3 .yui-b {
-  float: left;
-  width: 23.0769em;
-}
-
-.yui-t3 #yui-main .yui-b {
-  margin-left: 24.0769em;
-}
-
-.yui-t4 .yui-b {
-  float: right;
-  width: 13.8456em;
-}
-
-.yui-t4 #yui-main .yui-b {
-  margin-right: 14.8456em;
-}
-
-.yui-t5 .yui-b {
-  float: right;
-  width: 18.4615em;
-}
-
-.yui-t5 #yui-main .yui-b {
-  margin-right: 19.4615em;
-}
-
-.yui-t6 .yui-b {
-  float: right;
-  width: 23.0769em;
-}
-
-.yui-t6 #yui-main .yui-b {
-  margin-right: 24.0769em;
-}
-
-.yui-t7 #yui-main .yui-b {
-  display: block;
-  margin: 0px 0px 1em;
-}
-
-#yui-main .yui-b {
-  float: none;
-  width: auto;
-}
-
-.yui-gb .yui-u, .yui-g .yui-gb .yui-u, .yui-gb .yui-g, .yui-gb .yui-gb, .yui-gb .yui-gc, .yui-gb .yui-gd, .yui-gb .yui-ge, .yui-gb .yui-gf, .yui-gc .yui-u, .yui-gc .yui-g, .yui-gd .yui-u {
-  float: left;
-}
-
-.yui-g .yui-u, .yui-g .yui-g, .yui-g .yui-gb, .yui-g .yui-gc, .yui-g .yui-gd, .yui-g .yui-ge, .yui-g .yui-gf, .yui-gc .yui-u, .yui-gd .yui-g, .yui-g .yui-gc .yui-u, .yui-ge .yui-u, .yui-ge .yui-g, .yui-gf .yui-g, .yui-gf .yui-u {
-  float: right;
-}
-
-.yui-g div.first, .yui-gb div.first, .yui-gc div.first, .yui-gd div.first, .yui-ge div.first, .yui-gf div.first, .yui-g .yui-gc div.first, .yui-g .yui-ge div.first, .yui-gc div.first div.first {
-  float: left;
-}
-
-.yui-g .yui-u, .yui-g .yui-g, .yui-g .yui-gb, .yui-g .yui-gc, .yui-g .yui-gd, .yui-g .yui-ge, .yui-g .yui-gf {
-  width: 49.1%;
-}
-
-.yui-gb .yui-u, .yui-g .yui-gb .yui-u, .yui-gb .yui-g, .yui-gb .yui-gb, .yui-gb .yui-gc, .yui-gb .yui-gd, .yui-gb .yui-ge, .yui-gb .yui-gf, .yui-gc .yui-u, .yui-gc .yui-g, .yui-gd .yui-u {
-  width: 32%;
-  margin-left: 1.99%;
-}
-
-.yui-gb .yui-u {
-}
-
-.yui-gc div.first, .yui-gd .yui-u {
-  width: 66%;
-}
-
-.yui-gd div.first {
-  width: 32%;
-}
-
-.yui-ge div.first, .yui-gf .yui-u {
-  width: 74.2%;
-}
-
-.yui-ge .yui-u, .yui-gf div.first {
-  width: 24%;
-}
-
-.yui-g .yui-gb div.first, .yui-gb div.first, .yui-gc div.first, .yui-gd div.first {
-  margin-left: 0px;
-}
-
-.yui-g .yui-g .yui-u, .yui-gb .yui-g .yui-u, .yui-gc .yui-g .yui-u, .yui-gd .yui-g .yui-u, .yui-ge .yui-g .yui-u, .yui-gf .yui-g .yui-u {
-  width: 49%;
-}
-
-.yui-g .yui-g .yui-u {
-  width: 48.1%;
-}
-
-.yui-g .yui-gb div.first, .yui-gb .yui-gb div.first {
-}
-
-.yui-g .yui-gc div.first, .yui-gd .yui-g {
-  width: 66%;
-}
-
-.yui-gb .yui-g div.first {
-}
-
-.yui-gb .yui-gc div.first, .yui-gb .yui-gd div.first {
-}
-
-.yui-gb .yui-gb .yui-u, .yui-gb .yui-gc .yui-u {
-}
-
-.yui-g .yui-gb .yui-u {
-}
-
-.yui-gb .yui-gd .yui-u {
-}
-
-.yui-gb .yui-gd div.first {
-}
-
-.yui-g .yui-gc .yui-u, .yui-gb .yui-gc .yui-u {
-  width: 32%;
-  margin-right: 0px;
-}
-
-.yui-gb .yui-gc div.first {
-  width: 66%;
-}
-
-.yui-gb .yui-ge .yui-u, .yui-gb .yui-gf .yui-u {
-  margin: 0px;
-}
-
-.yui-gb .yui-gb .yui-u {
-}
-
-.yui-gb .yui-g div.first, .yui-gb .yui-gb div.first {
-}
-
-.yui-gc .yui-g .yui-u, .yui-gd .yui-g .yui-u {
-}
-
-.yui-gb .yui-gd div.first {
-  width: 32%;
-}
-
-.yui-g .yui-gd div.first {
-}
-
-.yui-ge .yui-g {
-  width: 24%;
-}
-
-.yui-gf .yui-g {
-  width: 74.2%;
-}
-
-.yui-gb .yui-ge div.yui-u, .yui-gb .yui-gf div.yui-u {
-  float: right;
-}
-
-.yui-gb .yui-ge div.first, .yui-gb .yui-gf div.first {
-  float: left;
-}
-
-.yui-gb .yui-ge .yui-u, .yui-gb .yui-gf div.first {
-}
-
-.yui-gb .yui-ge div.first, .yui-gb .yui-gf .yui-u {
-}
-
-.yui-ge div.first .yui-gd .yui-u {
-  width: 65%;
-}
-
-.yui-ge div.first .yui-gd div.first {
-  width: 32%;
-}
-
-#bd::after, .yui-g::after, .yui-gb::after, .yui-gc::after, .yui-gd::after, .yui-ge::after, .yui-gf::after {
-  content: ".";
-  display: block;
-  height: 0px;
-  clear: both;
-  visibility: hidden;
-}
-
-#bd, .yui-g, .yui-gb, .yui-gc, .yui-gd, .yui-ge, .yui-gf {
-}
-
-:link {
-  color: #0000ee;
-}
-
-:link:active {
-  color: #ee0000;
-}
-
-:link:visited {
-  color: #551a8b;
-}
-
-</style><style type="text/css">/*
-Copyright (c) 2008, Yahoo! Inc. All rights reserved.
-Code licensed under the BSD License:
-http://developer.yahoo.net/yui/license.txt
-version: 2.6.0
-*/
-h1{font-size:250%;}h2{font-size:123.1%;}h3{font-size:108%;}h1,h2,h3{margin:1em 0;}h1,h2,h3,h4,h5,h6,strong{font-weight:bold;}abbr,acronym{border-bottom:1px dotted #000;cursor:help;} em{font-style:italic;}blockquote,ul,ol,dl{margin:1em;}ol,ul,dl{margin-left:2em;}ol li{list-style:decimal outside;}ul li{list-style:disc outside;}dl dd{margin-left:1em;}th,td{border:1px solid #000;padding:.5em;}th{font-weight:bold;text-align:center;}caption{margin-bottom:.5em;text-align:center;}p,fieldset,table,pre{margin-bottom:1em;}input[type=text],input[type=password],textarea{width:12.25em;*width:11.9em;}
-</style><meta name="author" content="Jose Antonio Diaz">
-    <meta name="description" content="Task 2.1.1 Sound Library">
-    <meta name="generator" content="BlueGriffon wysiwyg editor">
-    <style type="text/css"></style>
+    <meta name="author" content="Jose Antonio Diaz">
   </head>
-  <body>
-    <div class="yui-t1" style="background-color: #d7ecff;" id="doc3">
-      <div id="hd">
-        <h1 style="height: 6px;"><br>
-        </h1>
-        <h1>&nbsp;<a href="https://www.saturnh2020.eu" target="_blank"><img src="Images/SaturnLogo2.jpg"
-              alt="SATURN Web Site" style="width: 142px; height: 61px;" title="SATURN Web Site"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <span style="font-family: Helvetica,Arial,sans-serif; color: #666666;">TASK
-            2.1.2 SOUND LIBRARY</span></h1>
-        <hr>
-        <p><br>
-        </p>
-      </div>
-      <div id="bd">
-        <div id="yui-main">
-          <div class="yui-b">
-            <div class="yui-g" style="background-color: white;">
-              <script>
-                function change_audio_file()
-                {
-                  var file_list = document.getElementById('audio_list') ;
-                  var file_to_play = file_list.options[ file_list.selectedIndex ].value ;
-                  var player = document.getElementById('audio_player');
-                  player.src = file_to_play ;
-                }
-              </script>
-              <form> <label for="audio_list"> <br>
-                </label>
-                <div style="text-align: center;">
-                  <h3><label for="audio_list"> <span style="font-family: Helvetica,Arial,sans-serif;">Select
-                        an audio file to load into the player. </span></label></h3>
-                  <h3> <span style="font-family: Helvetica,Arial,sans-serif;"><label
-                        for="audio_list"> Then click the Play button on the
-                        player for playback.</label></span></h3>
-                  <label for="audio_list"> </label><br>
-                  <label for="audio_list"> </label>
-                  <select onchange="change_audio_file();" id="audio_list">
-                    <option selected="selected" value="Sound/ContainerShip_broadband.wav">Container
-                      Ship Broadband</option>
-                    <option value="Sound/ContainerShip_broadband_modulated.wav">Container
-                      Ship Broadband Modulated</option>
-                    <option value="Sound/ContainerShip_broadband_modulated_tonals.wav">Container
-                      Ship Broadband Modulated Tonals</option>
-                    <option value="Sound/ContainerShip_broadband_tonals.wav">Container
-                      Ship Broadband Tonals</option>
-                    <option value="Sound/FishingBoat_broadband.wav">Fishing Boat
-                      Broadband</option>
-                    <option value="Sound/FishingBoat_broadband_modulated.wav">Fishing
-                      Boat Broadband Modulated</option>
-                    <option value="Sound/FishingBoat_broadband_modulated_tonals.wav">Fishing
-                      Boat Broadband Modulated Tonals</option>
-                    <option value="Sound/FishingBoat_broadband_tonals.wav">Fishing
-                      Boat Broadband Tonals</option>
-                    &nbsp;
-                  </select>
-                </div>
-                <div style="text-align: center;"><br>
-                </div>
-                <div style="text-align: center;"><br>
-                </div>
-              </form>
-              <div id="audio_container" style="text-align: center;"> <audio controls="controls"
-                  id="audio_player" src="Sound/ContainerShip_broadband.wav">
-                  <div style="border: 1px solid black ; padding: 8px ;"> Sorry,
-                    your browser does not support this audio player. </div>
-                </audio></div>
-              <div><br>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="yui-b" style="background-color: #cccccc; margin-left: 10px; width: 150px;">
-          <h2><span style="font-family: Helvetica,Arial,sans-serif;">&nbsp; <span
-                style="color: #cc6600;"> Related Links: </span><br>
-            </span></h2>
-          <p style="width: 152px;">&nbsp; <a href="https://www.marei.ie/project/jonas/"
-              title="JONAS web site" target="_blank"><img src="Images/Jonas5.jpg"
-                alt="JONAS Web Site" style="width: 128px; height: 82px;" title="JONAS Web Site"></a></p>
-          <p style="width: 152px;">&nbsp; <a href="https://www.plocan.eu" target="_blank"><img
-                src="Images/Plocan.jpg" alt="PLOCAN Web Site" style="width: 127px; height: 38px;"
-                title="PLOCAN Web Site"></a></p>
-          <p style="margin-left: 8px;"><span style="font-family: Helvetica,Arial,sans-serif;"><span
-                style="color: #0000ee;">Contact email: <a href="mailto:jose.diaz@plocan.eu">jose.diaz@plocan.eu</a></span><br>
-            </span></p>
-        </div>
-        <div class="yui-b"><br>
-        </div>
-      </div>
-      <div id="ft"> <br>
-        <hr style="height: 0px;">
-        <div style="text-align: center;"><span style="color: #666666;">© 2022 -
-            Jose Antonio Diaz</span></div>
-        <div style="text-align: center;"><span style="color: #666666;"><br>
-          </span></div>
-      </div>
-    </div>
+  <body style="    background-color: #ffcc99;">
+    <div style="text-align: center;"><img src="SaturnLogo2.jpg" alt="SATURN logo"
+        title="SATURN logo"></div>
+    <h1 style="text-align: center;"><span style="font-family: Helvetica,Arial,sans-serif;">TASK
+        2.1.2 SOUND LIBRARY</span></h1>
+    <p><br>
+    </p>
+    <hr>
+    <p><br>
+    </p>
+    <table style="width: 810px; height: 234px; text-align: left; margin-left: auto; margin-right: auto;"
+      border="1">
+      <tbody>
+        <tr>
+          <td><span style="font-family: Helvetica,Arial,sans-serif;">- Container
+              Ship Broadband</span></td>
+          <td><audio src="Sound/ContainerShip_broadband.wav" preload="none" controls="controls"></audio><br>
+          </td>
+        </tr>
+        <tr>
+          <td><span style="font-family: Helvetica,Arial,sans-serif;">- Container
+              Ship Broadband Modulated</span></td>
+          <td><audio src="Sound/ContainerShip_broadband_modulated.wav" preload="none"
+              controls="controls"></audio><br>
+          </td>
+        </tr>
+        <tr>
+          <td><span style="font-family: Helvetica,Arial,sans-serif;">- Container
+              Ship Broadband Modulated Tonals</span></td>
+          <td><audio src="Sound/ContainerShip_broadband_modulated_tonals.wav" preload="none"
+              controls="controls"></audio><br>
+          </td>
+        </tr>
+        <tr>
+          <td style="width: 428.983px;"><span style="font-family: Helvetica,Arial,sans-serif;">-
+              Container Ship Broadband Tonals</span></td>
+          <td style="width: 365.017px;"><audio src="Sound/ContainerShip_broadband_tonals.wav"
+              preload="none" controls="controls"></audio><br>
+          </td>
+        </tr>
+        <tr>
+          <td><span style="font-family: Helvetica,Arial,sans-serif;">- Fishing
+              Boat Broadband</span></td>
+          <td><audio src="Sound/FishingBoat_broadband.wav" preload="none" controls="controls"></audio><br>
+          </td>
+        </tr>
+        <tr>
+          <td><span style="font-family: Helvetica,Arial,sans-serif;">- Fishing
+              Boat Broadband Modulated</span></td>
+          <td><audio src="Sound/FishingBoat_broadband_modulated.wav" preload="none"
+              controls="controls"></audio><br>
+          </td>
+        </tr>
+        <tr>
+          <td><span style="font-family: Helvetica,Arial,sans-serif;">- Fishing
+              Boat Broadband Modulated Tonals</span></td>
+          <td><audio src="Sound/FishingBoat_broadband_modulated_tonals.wav" preload="none"
+              controls="controls"></audio><br>
+          </td>
+        </tr>
+        <tr>
+          <td><span style="font-family: Helvetica,Arial,sans-serif;">- Fishing
+              Boat Broadband Tonals</span></td>
+          <td><audio src="Sound/FishingBoat_broadband_tonals.wav" preload="none"
+              controls="controls"></audio><br>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p><br>
+    </p>
+    <p>© 2022 - Jose Antonio Diaz<br>
+    </p>
+    <h1></h1>
   </body>
 </html>
